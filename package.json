@@ -1,0 +1,37 @@
+{
+  "name": "@mharsch/node-red-serlcd",
+  "version": "0.0.1",
+  "description": "Node-RED nodes for SparkFun SerLCD boards",
+  "dependencies": {},
+  "scripts": {
+    "jshint": "jshint -c .jshintrc *.js",
+    "jscs": "jscs -c .jscsrc *.js",
+    "pep8": "pycodestyle --show-source --show-pep8 *.py"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mharsch/node-red-serlcd.git"
+  },
+  "engines": {
+    "node": ">=12"
+  },
+  "node-red": {
+    "version": ">=2.0.0",
+    "nodes": {
+      "serlcd_basic": "serlcd_basic.js"
+    }
+  },
+  "keywords": [
+    "node-red",
+    "LCD",
+    "SerLCD",
+    "HD44780",
+    "OpenLCD"
+  ],
+  "author": "Mike Harsch <mike@harschsystems.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mharsch/node-red-serlcd/issues"
+  },
+  "homepage": "https://github.com/mharsch/node-red-serlcd#readme"
+}

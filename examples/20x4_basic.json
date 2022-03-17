@@ -1,0 +1,535 @@
+[
+    {
+        "id": "6aa5ac47b4ac3862",
+        "type": "inject",
+        "z": "a47752a774f06428",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "line one",
+        "payloadType": "str",
+        "x": 290,
+        "y": 60,
+        "wires": [
+            [
+                "59834389cbd8b712"
+            ]
+        ]
+    },
+    {
+        "id": "ec9dc5d83524258b",
+        "type": "inject",
+        "z": "a47752a774f06428",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "2:and two",
+        "payloadType": "str",
+        "x": 300,
+        "y": 100,
+        "wires": [
+            [
+                "59834389cbd8b712"
+            ]
+        ]
+    },
+    {
+        "id": "ed8df8babeb1f5a2",
+        "type": "inject",
+        "z": "a47752a774f06428",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "3:and three",
+        "payloadType": "str",
+        "x": 310,
+        "y": 140,
+        "wires": [
+            [
+                "59834389cbd8b712"
+            ]
+        ]
+    },
+    {
+        "id": "bb683682d746cb9b",
+        "type": "inject",
+        "z": "a47752a774f06428",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "4:and four",
+        "payloadType": "str",
+        "x": 300,
+        "y": 180,
+        "wires": [
+            [
+                "59834389cbd8b712"
+            ]
+        ]
+    },
+    {
+        "id": "3d34b9d414d9a48d",
+        "type": "inject",
+        "z": "a47752a774f06428",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "clr:",
+        "payloadType": "str",
+        "x": 290,
+        "y": 240,
+        "wires": [
+            [
+                "59834389cbd8b712"
+            ]
+        ]
+    },
+    {
+        "id": "59834389cbd8b712",
+        "type": "serlcd",
+        "z": "a47752a774f06428",
+        "name": "my screen",
+        "address": "0x72",
+        "size": "20x4",
+        "x": 770,
+        "y": 380,
+        "wires": []
+    },
+    {
+        "id": "9fb0fd126ad7dfe7",
+        "type": "inject",
+        "z": "a47752a774f06428",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "contrast:75",
+        "payloadType": "str",
+        "x": 300,
+        "y": 320,
+        "wires": [
+            [
+                "59834389cbd8b712"
+            ]
+        ]
+    },
+    {
+        "id": "882ce377b6b15b93",
+        "type": "inject",
+        "z": "a47752a774f06428",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "contrast:5",
+        "payloadType": "str",
+        "x": 300,
+        "y": 400,
+        "wires": [
+            [
+                "59834389cbd8b712"
+            ]
+        ]
+    },
+    {
+        "id": "d595ee556a1df886",
+        "type": "inject",
+        "z": "a47752a774f06428",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "contrast:50",
+        "payloadType": "str",
+        "x": 300,
+        "y": 360,
+        "wires": [
+            [
+                "59834389cbd8b712"
+            ]
+        ]
+    },
+    {
+        "id": "1d0ddb4463ae21c7",
+        "type": "inject",
+        "z": "a47752a774f06428",
+        "name": "Black (Off)",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "backlight:0x00,0x00,0x00",
+        "payloadType": "str",
+        "x": 300,
+        "y": 500,
+        "wires": [
+            [
+                "59834389cbd8b712"
+            ]
+        ]
+    },
+    {
+        "id": "6bd08082bc6590bb",
+        "type": "inject",
+        "z": "a47752a774f06428",
+        "name": "Red",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "backlight:0xFF,0x00,0x00",
+        "payloadType": "str",
+        "x": 290,
+        "y": 540,
+        "wires": [
+            [
+                "59834389cbd8b712"
+            ]
+        ]
+    },
+    {
+        "id": "5eb380628bbbf257",
+        "type": "inject",
+        "z": "a47752a774f06428",
+        "name": "Orange",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "backlight:0xFF,0x8C,0x00",
+        "payloadType": "str",
+        "x": 290,
+        "y": 580,
+        "wires": [
+            [
+                "59834389cbd8b712"
+            ]
+        ]
+    },
+    {
+        "id": "6439496f0223cd0a",
+        "type": "inject",
+        "z": "a47752a774f06428",
+        "name": "Yellow",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "backlight:0xFF,0xFF,0x00",
+        "payloadType": "str",
+        "x": 290,
+        "y": 620,
+        "wires": [
+            [
+                "59834389cbd8b712"
+            ]
+        ]
+    },
+    {
+        "id": "4ca69d30e5bd2074",
+        "type": "inject",
+        "z": "a47752a774f06428",
+        "name": "Green",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "backlight:0x00,0xFF,0x00",
+        "payloadType": "str",
+        "x": 290,
+        "y": 660,
+        "wires": [
+            [
+                "59834389cbd8b712"
+            ]
+        ]
+    },
+    {
+        "id": "82507e28365f97be",
+        "type": "inject",
+        "z": "a47752a774f06428",
+        "name": "Blue",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "backlight:0x00,0x00,0xFF",
+        "payloadType": "str",
+        "x": 290,
+        "y": 700,
+        "wires": [
+            [
+                "59834389cbd8b712"
+            ]
+        ]
+    },
+    {
+        "id": "e7c245fb59b65011",
+        "type": "inject",
+        "z": "a47752a774f06428",
+        "name": "Indigo",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "backlight:0x4B,0x00,0x82",
+        "payloadType": "str",
+        "x": 290,
+        "y": 740,
+        "wires": [
+            [
+                "59834389cbd8b712"
+            ]
+        ]
+    },
+    {
+        "id": "2971cb365608b5b0",
+        "type": "inject",
+        "z": "a47752a774f06428",
+        "name": "Violet",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "backlight:0xA0,0x20,0xF0",
+        "payloadType": "str",
+        "x": 290,
+        "y": 780,
+        "wires": [
+            [
+                "59834389cbd8b712"
+            ]
+        ]
+    },
+    {
+        "id": "44c491b77cf87931",
+        "type": "inject",
+        "z": "a47752a774f06428",
+        "name": "Grey",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "backlight:0x80,0x80,0x80",
+        "payloadType": "str",
+        "x": 290,
+        "y": 820,
+        "wires": [
+            [
+                "59834389cbd8b712"
+            ]
+        ]
+    },
+    {
+        "id": "50f33cd6f3e147f7",
+        "type": "inject",
+        "z": "a47752a774f06428",
+        "name": "White (On)",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "backlight:0xFF,0xFF,0xFF",
+        "payloadType": "str",
+        "x": 300,
+        "y": 460,
+        "wires": [
+            [
+                "59834389cbd8b712"
+            ]
+        ]
+    }
+]
