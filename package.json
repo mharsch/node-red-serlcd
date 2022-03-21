@@ -1,6 +1,6 @@
 {
   "name": "@mharsch/node-red-serlcd",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Node-RED nodes for SparkFun SerLCD boards",
   "dependencies": {},
   "scripts": {

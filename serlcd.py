@@ -26,8 +26,8 @@ if len(sys.argv) > 1:
 if len(sys.argv) > 2:
     i2c_addr = int(sys.argv[2], 16)
 
-print("starting up serlcd.py with size {0}x{1} using i2c address {2}".format(
-   LCD_WIDTH, LCD_ROWS, hex(i2c_addr)), file=sys.stderr)
+# print("starting up serlcd.py with size {0}x{1} using i2c address {2}".format(
+#    LCD_WIDTH, LCD_ROWS, hex(i2c_addr)), file=sys.stderr)
 
 myLCD = qwiic_serlcd.QwiicSerlcd(i2c_addr)
 
@@ -44,12 +44,18 @@ while True:
             print("JSON parse error", file=sys.stderr)
             continue
 
+        if ('payload' in msg and (type(msg['payload']) == str)):
+            pass
+        else:
+            print("unexpected input, skipping", file=sys.stderr)
+            continue
+
         input = msg['payload']
         resp = {}
         if input == "cl:ose":
             myLCD.clearScreen()
-            print("shutting down serlcd.py", file=sys.stderr)
-            sys.exit(0)
+#           print("shutting down serlcd.py", file=sys.stderr)
+#           sys.exit(0)
         elif input == "clr:":
             myLCD.clearScreen()
         elif input.startswith("1:"):
